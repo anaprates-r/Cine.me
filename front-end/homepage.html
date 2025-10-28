@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine.me</title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
             <button type="submit">🔍</button>
             </form>
 
-            <ul>
+            <ul class="menu-links">
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="#">Perfil</a></li>
@@ -21,25 +22,79 @@
         </nav>
     </header>
 
-    <main>
+    <main class="alinhamento">
         <div>
             <section>
-                <h2>EM DESTAQUE</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_UmBPK3D6X4?si=Fo_bGtV7LeqoquDH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                    <h2 class="section-title">EM DESTAQUE</h2>
+                    <div class="featured-placeholder">
+                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/npogIctHwxY?si=3A4FEdDYIgNrKnBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>PARA VOCÊ</h2>
-                <div class="sugestao-item"></div>
+            <section style="margin-top: 40px;">
+                <h2 class="section-title">PARA VOCÊ:</h2>
+                
+                <!-- Card de Recomendação -->
+                <div class="recommendation-card">
+                    <!-- Imagem/Placeholder (Esquerda) -->
+                    <div class="rec-image-placeholder"></div>
+                    
+                    <!-- Detalhes e Botões (Direita) -->
+                    <div class="rec-details">
+                        <h3>Nome da série/filme</h3>
+                        <p>
+                            texto texto texto texto texto texto texto texto texto texto texto
+                        </p>
+                        
+                        <div class="rec-buttons">
+                            <!-- Botão 1: Avaliar -->
+                            <button class="btn-accent">
+                                Avaliar
+                            </button>
+                            <!-- Botão 2: Adicionar à minha lista -->
+                            <button class="btn-dark">
+                                Adicionar à minha lista
+                            </button>
+                        </div>
+                    </div>
             </section>
         </div>
 
         <aside class="avaliacoes-recentes">
-            <h2>AVALIAÇÕES RECENTES</h2>
-            <div class="avaliacao-bloco">
-                <p>TEXTO TEXTO TEXTO TEXTO</p>
-            </div>
-             <div class="avaliacao-bloco">
-                <p>TEXTO TEXTO TEXTO TEXTO</p>
+           <h2 class="section-title">AVALIAÇÕES RECENTES</h2>
+            
+            <div class="review-card-list">
+                <!-- Gerando 4 Cards de Avaliação -->
+                <div class="review-card">
+                    <!-- Placeholder da Imagem/Avatar da Avaliação -->
+                    <div class="review-avatar"></div>
+                    <!-- Texto da Avaliação -->
+                    <p class="review-text">
+                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-avatar"></div>
+                    <p class="review-text">
+                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-avatar"></div>
+                    <p class="review-text">
+                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-avatar"></div>
+                    <p class="review-text">
+                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                    </p>
+                </div>
             </div>
         </aside>
 

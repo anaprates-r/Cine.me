@@ -30,7 +30,7 @@ header {
     z-index: 1000;
 }
 
-nav {
+header nav {
     display: flex; 
     height: 4rem;
     width: 100%;

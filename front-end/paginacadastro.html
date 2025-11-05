@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Define a fonte Inter como primária */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url(https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+        }
+    </style>
+
+    <link rel="stylesheet" href="paginacadastro.css">
+
+    <link rel="stylesheet" href="paginacadastro.js">
+
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Container do Formulário -->
+    <div id="signup-card" class="cinema-card w-full max-w-lg p-8 sm:p-10 rounded-xl transition-all duration-300 transform scale-100">
+
+        <!-- Título principal -->
+        <h1 class="text-white text-3xl font-bold text-center mb-8 tracking-wide">
+            Que bom que quer se juntar à nossa comunidade!
+        </h1>
+
+        <form id="signup-form" onsubmit="handleSignUp(event)">
+            <!-- Campo Nome -->
+            <div class="mb-5">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" id="name" name="name" required class="form-input">
+            </div>
+
+            <!-- Campo Nome de Usuário -->
+            <div class="mb-5">
+                <label for="username" class="form-label">Nome de usuário:</label>
+                <input type="text" id="username" name="username" required class="form-input">
+            </div>
+
+            <!-- Campo Senha -->
+            <div class="mb-5">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" id="password" name="password" required class="form-input">
+            </div>
+
+            <!-- Campo Repetir Senha -->
+            <div class="mb-8">
+                <label for="confirm-password" class="form-label">Repetir senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="form-input">
+                <p id="password-error" class="text-yellow-300 text-sm mt-1 hidden">As senhas não coincidem.</p>
+            </div>
+
+            <!-- Botão de Cadastro -->
+            <div class="flex justify-center">
+                <button type="submit" class="submit-btn">
+                    Sign up
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal de Mensagem -->
+    <div id="message-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50 transition-opacity duration-300 opacity-0">
+
+        <div class="bg-white p-8 rounded-lg shadow-2xl max-w-sm w-full text-center transform scale-95 transition-transform duration-300">
+
+            <svg class="mx-auto h-12 w-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+            <h3 class="mt-2 text-xl font-semibold text-gray-900">Sucesso!</h3>
+
+            <p id="modal-message" class="mt-1 text-sm text-gray-500">Seu cadastro foi realizado com sucesso. Bem-vindo(a) à comunidade!</p>
+
+            <button onclick="closeModal()" class="mt-4 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-800 text-base font-medium text-white hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+
+                Fechar
+            </button>
+        </div>
+    </div>
+</html>

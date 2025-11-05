@@ -1,0 +1,69 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+     font-family: 'Inter', sans-serif;
+    background-image: url('https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+        /* Estilo do Card Principal */
+ .cinema-card {
+    background-color: rgba(139, 0, 0, 0.85); 
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+}
+
+        /* Estilo dos Rótulos */
+.form-label {
+    display: block;
+    color: white;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+        /* Estilo dos Campos de Input */
+ .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem; 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 0.5rem; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #1f2937; 
+    transition: all 0.2s;
+}
+ .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white; 
+    border-color: white;
+}
+        /* Classe para erro de validação - será adicionada via JS */
+ .form-input.error-border {
+    border-color: #fcd34d; 
+}
+
+        /* Estilo do Botão */
+  .submit-btn {
+    padding: 0.75rem 2.5rem; 
+    background-color: white;
+    color: #b91c1c; 
+    font-size: 1.25rem;
+    font-weight: 600; 
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s;
+}
+  .submit-btn:hover {
+    background-color: #fef2f2; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); 
+}
+  .submit-btn:active {
+    transform: scale(0.98);
+}
+  .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); 
+}

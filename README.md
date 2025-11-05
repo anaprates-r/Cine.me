@@ -1,35 +1,81 @@
-# Cine.me
-**Autores:** Maria Yasmim de Oliveira Simão e Ana Carolina Rodrigues Prates  
-**Disciplina:** Programação Para Web  
+# 🎬 Cine.me
+
+> Plataforma colaborativa para avaliação de filmes e séries baseada em opiniões reais de usuários.
+
+---
+
+## 👥 Autores  
+- **Maria Yasmim de Oliveira Simão**  
+- **Ana Carolina Rodrigues Prates**  
+- **Guilherme Sassi Costa**
+
+**Disciplina:** Programação para Web  
 **Professora:** Bianca Namie Sakiyama  
 
-## Introdução
-O **Cine.me** é uma plataforma de avaliação de filmes e séries desenvolvida com o objetivo de auxiliar usuários a decidir se vale a pena assistir determinado conteúdo.  
-A proposta é disponibilizar opiniões **reais de pessoas comuns**, evitando críticas tendenciosas ou patrocinadas por estúdios e plataformas de streaming.
+---
 
-## Objetivos
+## 💡 Sobre o Projeto
 
-### Objetivo Geral
-Criar uma plataforma colaborativa para avaliação de filmes e séries, baseada em opiniões genuínas de usuários.
+O **Cine.me** é uma aplicação web desenvolvida para ajudar usuários a decidir se vale a pena assistir determinado filme ou série.  
+Diferente dos sites de críticas tradicionais, o Cine.me valoriza opiniões genuínas de pessoas comuns, sem influências de estúdios ou plataformas de streaming.  
+A proposta é criar um ambiente transparente, colaborativo e autêntico, onde o público compartilha suas próprias experiências.
 
-### Objetivos Específicos
-- Permitir que usuários registrem avaliações de forma simples.  
-- Oferecer informações úteis para auxiliar na decisão de assistir ou não um conteúdo.  
+---
 
-## Metodologia
-O desenvolvimento do **Cine.me** segue os princípios de aplicações web modernas:
+## 🎯 Objetivos
 
-- **Frontend:** TailwindCSS com Vue.js.  
-- **Backend:** Node.js 
-- **Banco de Dados:** PostgreSQL 
+### 🎯 Objetivo Geral
+Desenvolver uma plataforma colaborativa para avaliação e descoberta de filmes e séries com base em opiniões reais de usuários.
 
-## Funcionalidades Futuras
-- Rankings semanais dos conteúdos mais bem avaliados.  
-- Filtros por gênero, ano de lançamento e plataforma de streaming.
+### 🎯 Objetivos Específicos
+- Permitir o registro de avaliações e comentários de forma simples.  
+- Exibir informações úteis para auxiliar na decisão do que assistir.  
+- Incentivar o compartilhamento de experiências entre usuários.  
+- Garantir uma interface moderna, leve e intuitiva.  
 
-## Conclusão
-O projeto **Cine.me** busca fornecer uma alternativa confiável às críticas tradicionais, priorizando experiências genuínas de usuários comuns.  
-Dessa forma, a plataforma apoia decisões mais informadas no consumo de filmes e séries, promovendo transparência e colaboração.
+---
 
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+## 🧩 Metodologia
+
+O projeto segue os princípios de aplicações web modernas, utilizando tecnologias atuais de desenvolvimento:
+
+| Camada | Tecnologia |
+|:--------|:------------|
+| **Frontend** | Vue.js + TailwindCSS |
+| **Backend** | Node.js |
+| **Banco de Dados** | PostgreSQL |
+
+---
+
+## ⚙️ Funcionalidades Principais
+
+✅ **Cadastro e login de usuários** — autenticação segura com persistência de dados.  
+✅ **Avaliação de filmes e séries** — notas e comentários sobre conteúdos assistidos.  
+✅ **Média de avaliações** — cálculo automático das notas atribuídas pelos usuários.  
+✅ **Busca e filtragem** — pesquisa por nome, gênero, ano ou plataforma de streaming.  
+✅ **Ranking semanal** — exibição dos conteúdos mais bem avaliados da comunidade.  
+
+---
+
+## 🚀 Funcionalidades Futuras
+
+🔸 Criação de **listas personalizadas** (“quero assistir”, “já assisti”, “favoritos”).  
+🔸 Integração com **APIs externas** (ex: TMDb) para importação automática de informações.  
+🔸 Sistema de **recomendações inteligentes** baseado no perfil do usuário.  
+🔸 Modo escuro e personalização de interface.  
+
+---
+
+## 🧾 Conclusão
+
+O **Cine.me** surge como uma alternativa confiável às críticas tradicionais, valorizando as experiências reais de quem assiste.  
+A plataforma estimula decisões mais conscientes e cria uma comunidade participativa, onde cada opinião importa.
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).  
+Sinta-se livre para usar, estudar e contribuir. 💪  
+
+---

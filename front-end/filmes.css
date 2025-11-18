@@ -161,7 +161,14 @@ li a:hover::before{
     /* Estilo para esconder a barra de rolagem (opcional e específico do navegador) */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    transition: transform 0.3s ease-in-out;
 }
+
+.cards-list :hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
 .cards-list::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
 }
@@ -175,14 +182,6 @@ li a:hover::before{
     transition: transform 0.3s, border 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-}
-
-.filme-card.destaque {
-    background-color: #555;
-    border: 3px solid #FF4500; /* Borda de destaque para o card central */
-    transform: scale(1.1); /* Destaca levemente o card central */
-    height: 330px; /* Aumenta a altura para destaque */
-    min-width: 220px;
 }
 
 .carousel-container button {

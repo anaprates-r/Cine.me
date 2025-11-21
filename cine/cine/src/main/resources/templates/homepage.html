@@ -28,7 +28,7 @@
                 <div>
                     <h2 class="section-title">EM DESTAQUE</h2>
                     <div class="featured-placeholder">
-                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/npogIctHwxY?si=3A4FEdDYIgNrKnBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ezFb7Yxx80k?si=Tf0TyISm7kh1WgLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -36,28 +36,30 @@
                 <h2 class="section-title">PARA VOCÊ:</h2>
                 
                 <!-- Card de Recomendação -->
-                <div class="recommendation-card">
-                    <!-- Imagem/Placeholder (Esquerda) -->
-                    <div class="rec-image-placeholder"></div>
+                <div th:each="rec : ${recomendacoes}" class="recommendation-container">
+                    <div class="recommendation-card">
+                        <!-- Imagem/Placeholder (Esquerda) -->
+                        <div class="rec-image-placeholder"></div>
                     
-                    <!-- Detalhes e Botões (Direita) -->
-                    <div class="rec-details">
-                        <h3>Nome da série/filme</h3>
-                        <p>
-                            texto texto texto texto texto texto texto texto texto texto texto
-                        </p>
-                        
-                        <div class="rec-buttons">
-                            <!-- Botão 1: Avaliar -->
-                            <button class="btn-accent">
-                                Avaliar
-                            </button>
-                            <!-- Botão 2: Adicionar à minha lista -->
-                            <button class="btn-dark">
-                                Adicionar à minha lista
-                            </button>
+                        <!-- Detalhes e Botões (Direita) -->
+                        <div class="rec-details">
+                            <h3 th:text="${rec.titulo}">Nome da série/filme</h3>
+                            <p th:text="${rec.textoMock}">
+                                texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                    
+                            <div class="rec-buttons">
+                                <!-- Botão 1: Avaliar -->
+                                <button class="btn-accent">
+                                    Avaliar
+                                </button>
+                                <!-- Botão 2: Adicionar à minha lista -->
+                                <button class="btn-dark">
+                                    Adicionar à minha lista
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                </div>
             </section>
         </div>
 
@@ -65,35 +67,15 @@
            <h2 class="section-title">AVALIAÇÕES RECENTES</h2>
             
             <div class="review-card-list">
-                <!-- Gerando 4 Cards de Avaliação -->
-                <div class="review-card">
+                <div th:each="avaliacao : ${avaliacoesRecentes}" class="review-card">
                     <!-- Placeholder da Imagem/Avatar da Avaliação -->
                     <div class="review-avatar"></div>
-                    <!-- Texto da Avaliação -->
-                    <p class="review-text">
+                    <!-- Texto + titulo da Avaliação -->
+                    <h4 th:text="${avaliacao.titulo}">Titulo</h4>
+                    <p th:text="${avaliacao.textoMock}" class="review-text">
                         TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
                     </p>
                 </div>
-                
-                <div class="review-card">
-                    <div class="review-avatar"></div>
-                    <p class="review-text">
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                    </p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-avatar"></div>
-                    <p class="review-text">
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                    </p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-avatar"></div>
-                    <p class="review-text">
-                        TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
-                    </p>
                 </div>
             </div>
         </aside>

@@ -41,28 +41,28 @@ O projeto segue os princípios de aplicações web modernas, utilizando tecnolog
 
 | Camada | Tecnologia |
 |:--------|:------------|
-| **Frontend** | Vue.js + TailwindCSS |
-| **Backend** | Node.js |
-| **Banco de Dados** | PostgreSQL |
+| **Frontend** | TailwindCSS |
+| **Backend** | Java |
+| **Banco de Dados** | MySQL |
 
 ---
 
 ## ⚙️ Funcionalidades Principais
 
-✅ **Cadastro e login de usuários** — autenticação segura com persistência de dados.  
-✅ **Avaliação de filmes e séries** — notas e comentários sobre conteúdos assistidos.  
-✅ **Média de avaliações** — cálculo automático das notas atribuídas pelos usuários.  
-✅ **Busca e filtragem** — pesquisa por nome, gênero, ano ou plataforma de streaming.  
-✅ **Ranking semanal** — exibição dos conteúdos mais bem avaliados da comunidade.  
-
----
-
-## 🚀 Funcionalidades Futuras
-
 🔸 Criação de **listas personalizadas** (“quero assistir”, “já assisti”, “favoritos”).  
 🔸 Integração com **APIs externas** (ex: TMDb) para importação automática de informações.  
 🔸 Sistema de **recomendações inteligentes** baseado no perfil do usuário.  
 🔸 Modo escuro e personalização de interface.  
+🔸 **Média de avaliações** — cálculo automático das notas atribuídas pelos usuários.  
+🔸 **Ranking semanal** — exibição dos conteúdos mais bem avaliados da comunidade.  
+
+---
+
+## 🚀 Funcionalidades Implementadas
+
+✅ **Cadastro e login de usuários** — autenticação segura com persistência de dados.  
+✅ **Avaliação de filmes e séries** — notas e comentários sobre conteúdos assistidos.  
+✅ **Busca e filtragem** — pesquisa por nome, gênero, ano ou plataforma de streaming.  
 
 ---
 

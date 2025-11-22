@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes | Cine</title>
+    <link rel="stylesheet" th:href="@{/vizualizacao.css}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#8A0808', 
+                        'accent-teal': '#5b0000d1', 
+                        'app-bg': '#7f0000ff', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <form action="/search" method="get" class="search-bar">
+            <input type="text" placeholder="O que está buscando?" name="q">
+            <button type="submit">🔍</button>
+            </form>
+
+            <ul class="menu-links">
+                <li><a th:href="@{/filmes}">Filmes</a></li> 
+                <li><a th:href="@{/series}">Séries</a></li>
+                <li><a th:href="@{/perfil}">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        
+        <div class="mb-6">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-1">NOME DO FILME/SÉRIE</h1>
+            <p class="text-sm text-gray-500 mb-4">2025 • 14 • 2h5min</p>
+            <span class="text-sm font-semibold text-blue-600 border-b border-blue-600 pb-0.5">Gênero</span>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-3/4">
+                
+                <!-- trailer do filme/serie -->
+                <div class="mt-6 flex flex-col md:flex-row gap-6">
+                    <div class="w-full relative rounded-lg shadow-xl" style="padding-top: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/5AwtptT8X8k?si=QEgryLvLDLFVWQpT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full lg:w-1/4 flex flex-col gap-8 mt-6 lg:mt-0">
+                
+                <!-- 1. BLOCO DE AVALIAÇÕES -->
+                <div class="bg-white rounded-xl shadow-xl pt-6 px-4 pb-4 flex flex-col h-fit">
+                        <div class="rating-box">
+                        <span class="text-3xl font-extrabold text-gray-900">250</span>
+                        <span class="text-sm text-gray-500 text-center">Avaliações totais</span>
+                    </div>
+
+                    <!-- Classificação Média -->
+                    <div class="rating-box">
+                        <div class="flex items-end mb-1">
+                            <!-- Símbolo de estrela preenchida -->
+                            <span class="text-4xl text-yellow-500 mr-2">★</span>
+                            <span class="text-4xl font-bold text-gray-900">3,5</span>
+                            <span class="text-xl font-medium text-gray-500">/5</span>
+                            <span class="text-xs text-primary-red font-bold ml-2 self-start pt-1">VER</span>
+                        </div>
+                        <span class="text-sm text-gray-500 text-center">Classificação média</span>
+                    </div>
+
+                    <!-- Sua Avaliação -->
+                    <div class="rating-box">
+                        <div class="flex items-end mb-1">
+                            <!-- Símbolo de estrela vazia/contorno -->
+                            <span class="text-4xl text-gray-400 mr-2">☆</span>
+                            <span class="text-4xl font-bold text-gray-900">0</span>
+                            <span class="text-xl font-medium text-gray-500">/5</span>
+                        </div>
+                        <span class="text-sm text-gray-500 text-center">Sua avaliação</span>
+                    </div>
+
+                    <!-- Botão de Ação -->
+                    <a href="#" class="w-full block"> 
+                        <button class="w-full mt-4 bg-accent-teal hover:bg-teal-700 text-white font-bold py-2 rounded-lg transition duration-150 shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-accent-teal focus:ring-opacity-50">
+                            AVALIAR
+                        </button>
+                    </a>
+                </div>
+                
+                <!-- 2. BLOCO DA SINOPSE  -->
+                <div class="bg-white rounded-xl shadow-xl p-4 mt-0">
+                    <h2 class="text-xl font-bold text-gray-800 border-b-2 border-primary-red pb-1 mb-3 inline-block">SINOPSE</h2>
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                        Descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição
+                        descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição descrição
+                        descrição descrição descrição descrição descrição descrição descrição.
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
